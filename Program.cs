@@ -17,6 +17,9 @@ namespace CommentKillerPOC
             builder.Services.AddSingleton<BaseCommentsService>();
             builder.Services.AddSingleton<TagPlugCommentsService>();
 
+            builder.Services.AddSingleton<ICacheService, CacheService>();
+            builder.Services.AddSingleton<IDataMonitoringService, DataMonitoringService>();
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

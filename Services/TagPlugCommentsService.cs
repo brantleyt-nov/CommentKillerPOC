@@ -3,7 +3,7 @@ using CommentKillerPOC.Repositories;
 
 namespace CommentKillerPOC.Services
 {
-    public class TagPlugCommentsService : BaseCommentsService, ICommentsService
+    public class TagPlugCommentsService : BaseCommentsService
     {
         public TagPlugCommentsService(ICommentRepository repository) : base(repository)
         {
